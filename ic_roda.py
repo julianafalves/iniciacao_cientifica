@@ -1,15 +1,17 @@
 import urllib
-import requests
+#import requests
 from urllib.request import urlopen
 import bs4
 from bs4 import BeautifulSoup
 import pandas as pd
 
 '''
-1. Pega a url de cada snp
-2. Pega o HTML de cada pagina
+1. Lê a url de cada gene
+2. Lê o HTML de cada pagina
+3. Lê o nome e os alelos de cada snp utilizando beautifulSoup
 3. Usa beautifulSoup para pegar as classes de html desejadas
-4. Cria do dataset
+4. Cria do datafreame utilizando pandas
+5. Converte em csv
 '''
 genes = ["APOE",'BIN1','CLU','ABCA7','CR1','PICALM','MS4A6A','CD33','MS4A4E','CD2AP']
 #create dataset
